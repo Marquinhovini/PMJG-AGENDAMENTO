@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cabecalho, TituloContainer, TituloAgendamento, Subtitulo, Date, Logo } from './styles';
+import { Cabecalho, TituloContainer, Secretaria, Subtitulo, Date, Logo } from './styles';
 import logoImg from '../../assets/titulo.png';
 import dayjs from 'dayjs';
 import 'dayjs/locale/pt-br';
@@ -13,12 +13,12 @@ const Cabecalhocomponente: React.FC = () => {
         <Cabecalho>
             <Logo src={logoImg} alt="Logo" />
             <TituloContainer>
-                <TituloAgendamento>SECRETARIA MUNICIPAL DE PLANEJAMENTO E FAZENDA</TituloAgendamento>
+                <Secretaria>SECRETARIA MUNICIPAL DE PLANEJAMENTO E FAZENDA</Secretaria>
                 <Subtitulo>Sistema de Agendamento para Atendimento Presencial</Subtitulo>
                 <Date>{currentDate}</Date>
             </TituloContainer>
         </Cabecalho>
-    );
+    );  
 };
 
 export default Cabecalhocomponente;
